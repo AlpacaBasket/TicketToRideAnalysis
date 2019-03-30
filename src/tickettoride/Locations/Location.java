@@ -1,6 +1,5 @@
 package tickettoride.Locations;
 
-import java.util.ArrayList;
 import tickettoride.Routes.RouteWrapper;
 
 /**
@@ -9,14 +8,14 @@ import tickettoride.Routes.RouteWrapper;
  */
 public abstract class Location {
     
-    private ArrayList<RouteWrapper> routes;
-    private String name;
+    protected RouteWrapper[] routes;
+    protected String name;
     
     public String getName() {
         return this.name;
     }
     
-    public ArrayList<RouteWrapper> getRoutes() {
+    public RouteWrapper[] getRoutes() {
         return this.routes;
     }
     

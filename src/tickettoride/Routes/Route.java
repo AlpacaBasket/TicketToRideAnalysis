@@ -1,20 +1,23 @@
 package tickettoride.Routes;
 
-import java.util.ArrayList;
 import tickettoride.Locations.Location;
 
 /**
  *
  * @author AlpacaBasket
  */
-public abstract class Route {
-    
-    private ArrayList<Location> locations;
+public class Route {
     
     public enum RType { blue, red, yellow, green, pink, grey, white, orange };
     private RType type;
+    private Location[] locations;
     
-    public ArrayList<Location> getLocations() {
+    Route(Location[] l, RType t) {
+        this.locations = l;
+        this.type = t;
+    }
+    
+    public Location[] getLocations() {
         return this.locations;
     }
     
