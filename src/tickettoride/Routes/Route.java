@@ -11,19 +11,15 @@ public abstract class Route {
     
     private ArrayList<Location> locations;
     
-    enum RType { blue, red, yellow, green, pink, grey, white, orange };
+    public enum RType { blue, red, yellow, green, pink, grey, white, orange };
     private RType type;
     
     public ArrayList<Location> getLocations() {
         return this.locations;
     }
     
-    public void setLocations(ArrayList<Location> list) {
-        this.locations = list;
-    }
-    
-    public void addLocation(Location l) {
-        this.locations.add(l);
+    public RType getType() {
+        return this.type;
     }
     
 }
