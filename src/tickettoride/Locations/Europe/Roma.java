@@ -6,9 +6,9 @@ import tickettoride.Locations.*;
  *
  * @author AlpacaBasket
  */
-public class Edinburgh extends Location {
+public class Roma extends Location {
     
-    Edinburgh() {
+    Roma() {
         super();
     }
     
