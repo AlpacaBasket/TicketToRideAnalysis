@@ -9,8 +9,8 @@ import tickettoride.Locations.Location;
 public class Route {
     
     public enum RType { blue, red, yellow, green, pink, grey, white, orange };
-    private RType type;
-    private Location[] locations;
+    private final RType type;
+    private final Location[] locations;
     
     Route(Location[] l, RType t) {
         this.locations = l;

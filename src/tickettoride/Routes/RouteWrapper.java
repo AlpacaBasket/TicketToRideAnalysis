@@ -8,9 +8,13 @@ import java.util.ArrayList;
  */
 public class RouteWrapper {
     
-    private ArrayList<Route> routes;
+    private final Route[] routes;
     
-    public ArrayList<Route> getRoutes() {
+    RouteWrapper (Route[] r) {
+        this.routes = r;
+    }
+    
+    public Route [] getRoutes() {
         return this.routes;
     }
     
