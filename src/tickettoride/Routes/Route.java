@@ -58,6 +58,10 @@ public class Route {
         return this.tunnel;
     }
     
+    public int getLocomotives() {
+        return this.locomotives;
+    }
+    
     // Return point value depending on route length
     // Considering being able to pass the game type in case different games have different point values for lengths
     private int points(int len) {
