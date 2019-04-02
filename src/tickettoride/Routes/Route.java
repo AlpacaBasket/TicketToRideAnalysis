@@ -41,6 +41,16 @@ public class Route {
     // Return point value depending on route length
     // Considering being able to pass the game type in case different games have different point values for lengths
     private int points(int len) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+        switch (len) {
+            case 1: return 1;
+            case 2: return 2;
+            case 3: return 4;
+            case 4: return 7;
+            case 5: return 10;
+            case 6: return 15;
+            default: return 0; // Something went wrong
+        }
+        
     }
 }
