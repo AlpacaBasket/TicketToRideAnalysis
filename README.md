@@ -3,14 +3,19 @@ TTR maths and stuff
 
 TODO
 
-0. Add points/length field to route class
-1. Add routes to all locations
-  a. Not started, do alphabetically
-  
-2. Write pathfinding algorithm
-3. Write data report on colours needed for each route
-4. Write raw facts about map.
-  a. Number of each colour needed
-  b. Number of routes
-  c. Number of tunnels
-  d. Number of cards of each colour in deck
+-- Add points/length field to route class
+-- Add routes to all locations
+---- Not started, do alphabetically
+-- Write pathfinding algorithm
+-- Write data report on colours needed for each route
+-- Write raw facts about map.
+---- Number of each colour needed
+---- Number of routes
+---- Number of tunnels
+---- Number of cards of each colour in deck
+
+Create Tests
+
+-- Create a location with 2 routes attached, return information about each route
+-- Create a location with higher trivial numbers of routes attached, return information about each route
+-- Create a location with a routewrapper and a route attached and return information about both
