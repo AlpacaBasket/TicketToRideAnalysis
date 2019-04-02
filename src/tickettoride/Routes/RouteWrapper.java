@@ -1,7 +1,5 @@
 package tickettoride.Routes;
 
-import java.util.ArrayList;
-
 /**
  * Wraps multiple shared track routes together
  * @author AlpacaBasket
