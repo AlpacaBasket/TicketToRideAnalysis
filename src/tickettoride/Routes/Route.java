@@ -14,12 +14,15 @@ public class Route {
     private final Location[] locations;
     private final int length;
     private final int points;
+    private final boolean tunnel;
     
-    Route(Location[] l, RType t, int len) {
+    
+    Route(Location[] l, RType t, int len, boolean b) {
         this.locations = l;
         this.type = t;
         this.length = len;
         this.points = points(len);
+        this.tunnel = b;
     }
     
     public Location[] getLocations() {
@@ -36,6 +39,10 @@ public class Route {
     
     public int getLength() {
         return this.length;
+    }
+    
+    public boolean isTunnel() {
+        return this.tunnel;
     }
     
     // Return point value depending on route length
