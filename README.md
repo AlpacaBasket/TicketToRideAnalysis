@@ -3,7 +3,7 @@ TTR maths and stuff
 
 TODO
 
--- Add points/length field to route class
+-- Add number of locomotives to routes
 
 -- Add routes to all locations
 
