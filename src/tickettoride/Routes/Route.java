@@ -15,14 +15,27 @@ public class Route {
     private final int length;
     private final int points;
     private final boolean tunnel;
+    private final int locomotives;
     
-    
-    Route(Location[] l, RType t, int len, boolean b) {
-        this.locations = l;
+    /**
+     * @param l1
+     * Locations
+     * @param t
+     * Colour of route: RType enum
+     * @param l2
+     * Length of route
+     * @param b
+     * If route is a tunnel
+     * @param l3 
+     * Number of locomotives needed
+     */
+    Route(Location[] l1, RType t, int l2, boolean b, int l3) {
+        this.locations = l1;
         this.type = t;
-        this.length = len;
-        this.points = points(len);
+        this.length = l2;
+        this.points = points(l2);
         this.tunnel = b;
+        this.locomotives = l3;
     }
     
     public Location[] getLocations() {
