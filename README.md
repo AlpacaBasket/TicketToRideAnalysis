@@ -3,8 +3,6 @@ TTR maths and stuff
 
 TODO
 
--- Add number of locomotives to routes
-
 -- Add routes to all locations
 
 ---- Not started, do alphabetically
